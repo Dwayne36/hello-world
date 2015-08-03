@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
 	        number=7;
 		string = malloc(strlen(HW_STRING));
 				        
-		printf("String virtual address %lX\n", (unsigned long) string);
+		printf("String 2 virtual address %lX\n", (unsigned long) string);
 						      
 		strcpy(string, HW_STRING);
 		printf("%s %i\n", string, number);
