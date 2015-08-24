@@ -6,6 +6,8 @@ AM_INIT_AUTOMAKE
 AM_SILENT_RULES([yes])
 LT_INIT
 AC_PROG_CC
+AC_SEARCH_LIBS([pthread_create], [pthread], [],
+	AC_MSG_ERROR([***POSIX threads support required]))
 PKG_CHECK_MODULES([MODBUS], [libmodbus])
 AC_CONFIG_FILES([
 Makefile
